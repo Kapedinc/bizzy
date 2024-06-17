@@ -14,29 +14,20 @@
     justify-content: center;
     position: relative; /* Add this line to ensure proper positioning of the video */
     z-index: 1;
+    background-image: url("https://vashong.github.io/widgets/images/mockups/blueback.svg");
 }
 
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2; /* Ensure the video is behind the content */
-    filter: brightness(50%) sepia(100%) hue-rotate(180deg); /* Adjust the tint effect */
-  }
-  
-
-@media all and (max-width:1279px) {
-    .feel-special  {
+@media all and (max-width: 1279px) {
+    .feel-special {
         background-position: center bottom;
+        background-image: url("https://vashong.github.io/widgets/images/mockups/blueback.svg");
     }
 }
 
-@media all and (max-width:767px) {
-    .feel-special  {
+@media all and (max-width: 767px) {
+    .feel-special {
         min-height: 1150px;
         background-position: right center;
+        background-image: url("https://vashong.github.io/widgets/images/mockups/blueback.svg");
     }
 }

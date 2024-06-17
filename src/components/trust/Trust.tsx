@@ -1,97 +1,70 @@
-import { useEffect, useState, useRef } from 'react';
-import { scroller } from 'react-scroll';
+import React, { useEffect, useRef, useState } from 'react';
+import classNames from 'classnames';
+import './Trust.scss';
 
 const Trust: React.FC = () => {
-  const [allRevealed, setAllRevealed] = useState(false);
-  const [inView, setInView] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const paragraphs = document.querySelectorAll('.trust-paragraph');
-    let spans: HTMLElement[] = [];
-
-    paragraphs.forEach((paragraph) => {
-      let htmlString = '';
-      let pArray = paragraph.textContent?.split('') || [];
-      for (let i = 0; i < pArray.length; i++) {
-        htmlString += `<span class="trust-span">${pArray[i]}</span>`;
-      }
-      paragraph.innerHTML = htmlString;
-    });
-
-    spans = Array.from(document.querySelectorAll('.trust-span'));
-
-    function revealSpans() {
-      spans.forEach((span) => {
-        const rect = span.parentElement?.getBoundingClientRect();
-        if (rect && rect.top < window.innerHeight / 2) {
-          let { left, top } = span.getBoundingClientRect();
-          top = top - window.innerHeight * 0.1;
-          let opacityValue = Math.max(0.1, 1 - (top * 0.01 + left * 0.001));
-          opacityValue = Math.min(opacityValue, 1);
-          span.style.opacity = opacityValue.toFixed(3);
+    const handleScroll = () => {
+      if (ref.current) {
+        const rect = ref.current.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+          setIsVisible(true);
         }
-      });
-
-      const allRevealed = spans.every(
-        (span) => parseFloat(span.style.opacity) === 1
-      );
-      if (allRevealed) {
-        setAllRevealed(true);
-      }
-    }
-
-    window.addEventListener('scroll', revealSpans);
-    revealSpans();
-
-    return () => {
-      window.removeEventListener('scroll', revealSpans);
-    };
-  }, []);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setInView(entry.isIntersecting);
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
       }
     };
-  }, []);
 
-  useEffect(() => {
-    if (allRevealed && inView) {
-      scroller.scrollTo('next-section', {
-        duration: 1500,
-        delay: 100,
-        smooth: 'easeInOutQuart',
-      });
-    }
-  }, [allRevealed, inView]);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div className="section -section wf-section">
-      <div ref={sectionRef} className={`trust-container w-full min-h-screen bg-[#161616] text-white ${inView && !allRevealed ? 'fixed top-0 left-0' : ''}`}>
-        <header className="relative h-20 flex items-center px-[5%]">
-          {/* Add header content here if needed */}
-        </header>
-        <p className="trust-paragraph mb-16 text-[clamp(20px,5vw,90px)] px-[30%]">
-          Here, your financial transactions reach a new echelon, enabling you to pay every invoice with cryptocurrency, regardless of the merchant's preferences. Your dedication to timely payments is honored with valuable points, enhancing your financial standing.
-        </p>
-      </div>
-      <div id="next-section" className="min-h-screen">
-        {/* The content of the next section */}
+    <div className="p-4 bg-gray-800 text-white">
+      <div className="max-w-4xl mx-auto" ref={ref}>
+        <div className="text-2xl font-bold mb-4">NOT EVERYONE MAKES IT IN.</div>
+        <div className={classNames("text-lg relative overflow-hidden", { 'animate-light': isVisible })}>
+          <span>the </span>
+          <span>story </span>
+          <span>of </span>
+          <span>CRED </span>
+          <span>begins </span>
+          <span>with </span>
+          <span>trust. </span>
+          <span>we </span>
+          <span>believe </span>
+          <span>individuals </span>
+          <span>who've </span>
+          <span>proven </span>
+          <span>their </span>
+          <span>trustworthiness </span>
+          <span>deserve </span>
+          <span>better: </span>
+          <span>better </span>
+          <span>experiences, </span>
+          <span>better </span>
+          <span>rewards, </span>
+          <span>better </span>
+          <span>rules. </span>
+          <span>this </span>
+          <span>is </span>
+          <span className="text-gray-800">the </span>
+          <span className="text-gray-800">status </span>
+          <span className="text-gray-800">quo </span>
+          <span className="text-gray-800">we're </span>
+          <span className="text-gray-800">building. </span>
+          <span className="text-gray-800">make </span>
+          <span className="text-gray-800">it </span>
+          <span className="text-gray-800">to </span>
+          <span className="text-gray-800">the </span>
+          <span className="text-gray-800">club, </span>
+          <span className="text-gray-800">and </span>
+          <span className="text-gray-800">experience </span>
+          <span className="text-gray-800">the </span>
+          <span className="text-gray-800">ascension </span>
+          <span className="text-gray-800">yourself. </span>
+        </div>
       </div>
     </div>
   );

@@ -5,10 +5,6 @@ import "./FeelSpecial.scss";
 const FeelSpecial = () => {
   return (
     <div className="feel-special photo-section">
-      <video autoPlay muted loop playsInline className="background-video">
-        <source src="/videos/lux.mp4" type="video/mp4"/>
-        Your browser does not support the video tag.
-      </video>
       <div className="max-width">
         <div className="photo-section-child">
           <div className="photo-section-top">
