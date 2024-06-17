@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Mobile.scss';
-import ScreenText from './ScreenText';
+import ScreenText from './ScreenText.js';
 
 
 const scrollData = [

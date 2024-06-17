@@ -1,7 +1,7 @@
 // src/components/Main.tsx
 import React from 'react';
-import Button from '../common/button/Button';
-import SplineScene from '../spline/SplineScene';
+import Button from '../common/button/Button.js';
+import SplineScene from '../spline/SplineScene.js';
 
 const Main = () => {
   const sceneUrl = 'https://prod.spline.design/Ibxvmkm4KiUhkEdX/scene.splinecode';

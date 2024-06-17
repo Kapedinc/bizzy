@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Button from '../common/button/Button';
+import Button from '../common/button/Button.js';
 import './Rating.scss';
 
 const Data = [
