@@ -1,0 +1,65 @@
+.trust-wrapper {
+    background-color: var(--bg-green);
+    color: var(--white);
+    position: relative;
+    padding: 240px 200px 250px;
+    background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/trust-bg.jpg);
+    background-size: cover;
+    background-position: right bottom;
+}
+
+.trust-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.trust-left-text {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -.15px;
+    line-height: 64px;
+    opacity: 0.9;
+}
+
+.trust-right-wrapper {
+    width: 50%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+.trust-right-first, .trust-right-second, .trust-right-third {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 28px;
+    margin-top: 20px;
+    max-width: 550px;
+}
+
+@media all and (max-width: 767px) {
+    .trust-wrapper {
+        padding: 60px;
+        flex-direction: column;
+    }
+
+    .trust-left {
+        width: 100%;
+        padding-bottom: 80px;
+    }
+
+    .trust-left-text {
+        font-size: 55px;
+        line-height: 55px;
+        max-width: 70%;
+    }
+
+    .trust-right-wrapper {
+        width: 100%;
+        margin-top: 300px;
+        margin-left: 0px;
+    }
+}

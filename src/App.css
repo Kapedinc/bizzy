@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles.css */
+.trust-span {
+    position: relative;
+  }
+  
+  .trust-span .absolute {
+    opacity: 0.6;
+  }
+  
+  .trust-span .text-white {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .next-section {
+    min-height: 100vh;
+    background-color: white;
+  }
+  

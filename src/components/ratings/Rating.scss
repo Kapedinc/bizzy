@@ -1,0 +1,105 @@
+.ratings-wrapper {
+    display: flex;
+    background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png");
+    background-position: right top;
+    background-size: cover;
+    position: relative;
+    z-index: 20;
+}
+
+.ratings-child-wrapper {
+    color: var(--white);
+    padding: 200px;
+    white-space: pre-line;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.ratings-cta {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.ratings-cta-left {
+    padding-right: 75px;
+}
+
+.ratings-cta-right {
+    padding-left: 75px;
+}
+
+.ratings-number {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-bottom: 48px;
+
+    p {
+        &:nth-child(1) {
+            font-size: 160px;
+            line-height: 120px;
+            font-weight: 700;
+            padding-right: 16px;
+            opacity: 0.9;
+            margin: 0px;
+        }
+
+        &:nth-child(2) {
+            font-size: 60px;
+            line-height: 55px;
+            font-weight: 700;
+            padding-left: 16px;
+            opacity: 0.9;
+            margin: 0px;
+        }
+    }
+}
+
+.ratings-star {
+    padding-bottom: 48px;
+
+    .ratings-star-img {
+        width: 179px;
+        height: 28px;
+    }
+}
+
+.ratings-store-img {
+    width: 44px;
+}
+
+.ratings-review {
+    height: 200px;
+    width: 900px;
+    margin: 60px auto 0px;
+    overflow: hidden;
+    display: flex;
+}
+
+.ratings-review-wrapper {
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 16px
+}
+
+.ratings-change {
+    display: flex;
+    margin: 0px auto;
+    gap: 10px;
+}
+
+.rating-box {
+    margin: 0px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-color: var(--bg-select);
+}
+
+.ratings-select {
+    background-color: var(--white);
+}

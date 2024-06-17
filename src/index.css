@@ -1,0 +1,15 @@
+@import "./common/styles/Fonts.scss";
+@import "./common/styles/variables.scss";
+@import "./common/styles/CommonClass.scss";
+@import "./common/styles/Animation.scss";
+
+body {
+    font-family: Gilroy, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    background-color: var(--bg-black);
+    color: var(--white);
+    overflow-x: hidden;
+}
