@@ -1,3 +1,4 @@
+// src/components/Rating.tsx
 import React, { useState, useEffect } from 'react';
 import Button from '../common/button/Button.js';
 import './Rating.scss';
@@ -26,24 +27,14 @@ const Data = [
 ];
 
 const Rating = () => {
-
-    const [currentData, setcurrentData] = useState(0);
-    const [isChanged, setisChanged] = useState<any>(null);
+    const [currentData, setCurrentData] = useState(0);
 
     useEffect(() => {
-        setTimeout(() => {
-            setisChanged(isChanged === true ? null : true);
-            if (currentData === 4) {
-                setcurrentData(0);
-            } else {
-                setcurrentData(currentData + 1);
-            }
+        const interval = setInterval(() => {
+            setCurrentData((prevData) => (prevData === Data.length - 1 ? 0 : prevData + 1));
         }, 2000);
-    }, [currentData])
-
-    function handleCurrent(i: number) {
-        setcurrentData(i);
-    }
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <div className='ratings-wrapper'>
@@ -55,10 +46,10 @@ const Rating = () => {
                             <p>app store</p>
                         </div>
                         <div className='ratings-star'>
-                            <img className='ratings-star-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/rating-ios.png" />
+                            <img className='ratings-star-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/rating-ios.png" alt="App Store Rating" />
                         </div>
                         <div className='ratings-btn'>
-                            <Button prefix={<img className='ratings-store-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/apple-store-logo.png" />} buttonText='Download the app' />
+                            <Button prefix={<img className='ratings-store-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/apple-store-logo.png" alt="Apple Store Logo" />} buttonText='Download the app' />
                         </div>
                     </div>
                     <div className='ratings-cta-right'>
@@ -67,27 +58,27 @@ const Rating = () => {
                             <p>play store</p>
                         </div>
                         <div className='ratings-star'>
-                            <img className='ratings-star-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/rating-android.png" />
+                            <img className='ratings-star-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/rating-android.png" alt="Play Store Rating" />
                         </div>
                         <div className='ratings-btn'>
-                            <Button prefix={<img className='ratings-store-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/play-store-logo.png" />} buttonText='Download the app' />
+                            <Button prefix={<img className='ratings-store-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/play-store-logo.png" alt="Play Store Logo" />} buttonText='Download the app' />
                         </div>
                     </div>
                 </div>
                 <div className='ratings-review'>
-                    <div className={`${isChanged ? 'slide-in-right' : ''} ratings-review-wrapper`}>
+                    <div className={`ratings-review-wrapper ${currentData !== null ? 'slide-in-right' : ''}`}>
                         <p>{Data[currentData].message}</p>
-                        <p>{Data[currentData].madeBy}</p>
+                        <p>- {Data[currentData].madeBy}</p>
                     </div>
                 </div>
                 <div className='ratings-change'>
-                    {Data.map((val, i) => (
-                        <p onClick={() => handleCurrent(i)} className={`${currentData == i ? 'ratings-select' : '' } rating-box`} key={i}></p>
+                    {Data.map((_, i) => (
+                        <p onClick={() => setCurrentData(i)} className={`${currentData === i ? 'ratings-select' : ''} rating-box`} key={i}></p>
                     ))}
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Rating;

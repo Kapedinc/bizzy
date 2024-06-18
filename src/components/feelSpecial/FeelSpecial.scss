@@ -1,33 +1,58 @@
 .feel-special {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    position: relative; /* Add this line to ensure proper positioning of the video */
+    position: relative;
     z-index: 1;
     background-image: url("https://vashong.github.io/widgets/images/mockups/blueback.svg");
-}
+    background-repeat: no-repeat;
 
-@media all and (max-width: 1279px) {
-    .feel-special {
+    @media all and (max-width: 1279px) {
         background-position: center bottom;
-        background-image: url("https://vashong.github.io/widgets/images/mockups/blueback.svg");
     }
-}
 
-@media all and (max-width: 767px) {
-    .feel-special {
+    @media all and (max-width: 767px) {
         min-height: 1150px;
         background-position: right center;
-        background-image: url("https://vashong.github.io/widgets/images/mockups/blueback.svg");
     }
+}
+
+.photo-section {
+    padding: 20px;
+}
+
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo-section-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.photo-section-top {
+    margin-bottom: 20px;
+}
+
+.photo-section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.photo-section-subheading {
+    font-size: 1.2rem;
+}
+
+.photo-section-bottom {
+    margin-top: 20px;
+}
+
+.photo-section-description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
 }

@@ -1,6 +1,7 @@
 .main-section-wrapper {
     position: relative;
     height: 100vh; /* Adjust as needed */
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -20,27 +21,27 @@
     padding: 20px;
     text-align: center; /* Center text content horizontally */
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
   }
   
-
-.main-heading {
+  .main-heading {
     font-size: 106px;
     font-weight: 700;
     text-align: center;
     line-height: 1.2; /* Adjust line height to control spacing */
-
-}
-
-.main-subheading {
+  }
+  
+  .main-subheading {
     font-size: 30px;
     letter-spacing: -0.2px;
     line-height: 38px;
     margin: 35px 58px;
     text-align: center;
-}
-.Button {
+  }
+  
+  .Button {
     display: inline-block;
     background-color: #007BFF; /* Example background color */
     color: white;
@@ -50,38 +51,39 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: center;
+    text-align: center; /* Ensure text is centered */
   }
-
-@media all and (max-width: 1279px) {
+  
+  /* Media Queries */
+  @media all and (max-width: 1279px) {
     .main-heading {
-        font-size: 82px;
-        line-height: 92px;
+      font-size: 82px;
+      line-height: 92px;
     }
-
+  
     .main-subheading {
-        font-size: 25px;
+      font-size: 25px;
     }
-}
-
-@media all and (max-width: 767px) {
-
-    .main-section {
-        align-items: flex-start;
-        text-align: left;
-        min-height: 70vh;
+  }
+  
+  @media all and (max-width: 767px) {
+    .main-section-wrapper {
+      align-items: flex-start;
+      text-align: left;
+      min-height: 70vh;
     }
-
+  
     .main-heading {
-        font-size: 55px;
-        line-height: 47.5px;
-        width: 270px;
-        margin-top: 60px;
+      font-size: 55px;
+      line-height: 1.2;
+      width: 270px;
+      margin-top: 60px;
     }
-
+  
     .main-subheading {
-        font-size: 16px;
-        line-height: 22px;
-        margin: 35px 0px;
+      font-size: 16px;
+      line-height: 22px;
+      margin: 35px 0;
     }
-}
+  }
+  
