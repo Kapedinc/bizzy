@@ -5,15 +5,15 @@ import './Rating.scss';
 
 const Data = [
     {
-        message: '"have been using the app for an year... very happy with this. it greatly avoids the need for searching for statements individually and logging in to pay them all. with cred i can happily pay all my cc bills with a single click. love the experience."',
+        message: '"have been using the app for an year... very happy with this. it greatly avoids the need for searching for statements individually and logging in to pay them all. with parliamint i can happily pay all my cc bills with a single click. love the experience."',
         madeBy: 'pushpalatha a'
     },
     {
-        message: '"great app, paying dues of credit card was never that much easy and fast. few more rewarding features also available there like showing credit score, can easily pay rent, getting cashback whenever paying cc dues. lots more. i really loves cred."',
+        message: '"great app, paying dues of parliamintit card was never that much easy and fast. few more rewarding features also available there like showing parliamintit score, can easily pay rent, getting cashback whenever paying cc dues. lots more. i really loves parliamint."',
         madeBy: 'sanjeev kataria'
     },
     {
-        message: '"i would say one of the best platforms to manage your credit card payments with lot of advantages and rewards. you can even pay rent to your owner using credit card. thats really cool. thanks for all the awesomeness. keep inventing !!"',
+        message: '"i would say one of the best platforms to manage your parliamintit card payments with lot of advantages and rewards. you can even pay rent to your owner using parliamintit card. thats really cool. thanks for all the awesomeness. keep inventing !!"',
         madeBy: 'jagadeeswar reddy singam'
     },
     {
@@ -46,10 +46,10 @@ const Rating = () => {
                             <p>app store</p>
                         </div>
                         <div className='ratings-star'>
-                            <img className='ratings-star-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/rating-ios.png" alt="App Store Rating" />
+                            <img className='ratings-star-img' src="https://web-images.parliamintcdn.in/_next/assets/images/home-page/rating-ios.png" alt="App Store Rating" />
                         </div>
                         <div className='ratings-btn'>
-                            <Button prefix={<img className='ratings-store-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/apple-store-logo.png" alt="Apple Store Logo" />} buttonText='Download the app' />
+                            <Button prefix={<img className='ratings-store-img' src="https://web-images.parliamintcdn.in/_next/assets/images/home-page/apple-store-logo.png" alt="Apple Store Logo" />} buttonText='Download the app' />
                         </div>
                     </div>
                     <div className='ratings-cta-right'>
@@ -58,10 +58,10 @@ const Rating = () => {
                             <p>play store</p>
                         </div>
                         <div className='ratings-star'>
-                            <img className='ratings-star-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/rating-android.png" alt="Play Store Rating" />
+                            <img className='ratings-star-img' src="https://web-images.parliamintcdn.in/_next/assets/images/home-page/rating-android.png" alt="Play Store Rating" />
                         </div>
                         <div className='ratings-btn'>
-                            <Button prefix={<img className='ratings-store-img' src="https://web-images.credcdn.in/_next/assets/images/home-page/play-store-logo.png" alt="Play Store Logo" />} buttonText='Download the app' />
+                            <Button prefix={<img className='ratings-store-img' src="https://web-images.parliamintcdn.in/_next/assets/images/home-page/play-store-logo.png" alt="Play Store Logo" />} buttonText='Download the app' />
                         </div>
                     </div>
                 </div>

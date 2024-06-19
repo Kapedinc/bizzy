@@ -28,7 +28,7 @@ const Trust: React.FC = () => {
           <span>the </span>
           <span>story </span>
           <span>of </span>
-          <span>CRED </span>
+          <span>parliamint </span>
           <span>begins </span>
           <span>with </span>
           <span>trust. </span>

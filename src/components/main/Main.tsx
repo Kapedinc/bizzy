@@ -22,7 +22,7 @@ const Main = () => {
           <div className='main-subheading'>
             treat your business to the finer side of being responsible
           </div>
-          <Button buttonText='Download CRED' />
+          <Button buttonText='Download parliamint' />
         </div>
       </div>
     </div>

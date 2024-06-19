@@ -4,11 +4,11 @@ import "./Security.scss";
 
 const Security = () => {
   return (
-    <div className="cred-security photo-section">
+    <div className="parliamint-security photo-section">
       <div className="max-width">
         <div className="photo-section-child">
           <div className="photo-section-top">
-            <div className="photo-section-heading cred-security-heading">
+            <div className="photo-section-heading parliamint-security-heading">
               security first. and second.
             </div>
             <div className="photo-section-subheading">
@@ -16,8 +16,8 @@ const Security = () => {
             </div>
           </div>
           <div className="photo-section-bottom">
-            <div className="photo-section-description cred-security-description">
-              CRED ensures that all your personal data and transactions are
+            <div className="photo-section-description parliamint-security-description">
+              parliamint ensures that all your personal data and transactions are
               encrypted, and secured so what’s yours remains only yours. there’s
               no room for mistakes because we didn’t leave any.
             </div>

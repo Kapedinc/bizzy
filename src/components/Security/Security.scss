@@ -1,6 +1,6 @@
-.cred-security {
+.parliamint-security {
     background-color: var(--bg-purple);
-    background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/security-bg.jpg");
+    background-image: url("https://web-images.parliamintcdn.in/_next/assets/images/home-page/security-bg.jpg");
 }
 
 
@@ -8,23 +8,23 @@
 
 
 @media all and (max-width:1279px) {
-    .cred-security {
+    .parliamint-security {
         background-position: center bottom;
     }
 }
 
 @media all and (max-width:767px) {
-    .cred-security {
-        background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/security-bg-mobile.jpg");
+    .parliamint-security {
+        background-image: url("https://web-images.parliamintcdn.in/_next/assets/images/home-page/security-bg-mobile.jpg");
         min-height: 1150px;
         background-position: right center;
     }
 
-    .cred-security-heading {
+    .parliamint-security-heading {
         margin-top: 400px;
     }
 
-    .cred-security-description {
+    .parliamint-security-description {
         margin-top: 100px !important;
     }
 }
