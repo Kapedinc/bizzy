@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <div className='main-section-wrapper'>
       <div className='spline-scene-wrapper'>
-        <SplineScene sceneUrl={sceneUrl} />
+        <img src="/images/unicorn-unscreen.gif" className='flex flex-col items-center'></img>
       </div>
       <div className='main-content'>
         <div className='flex flex-col items-center'>
