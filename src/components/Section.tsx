@@ -1,4 +1,5 @@
 import React from 'react';
+import NeoPopTiltedButton from './shimmerButton/TiltedButton.js';
 
 interface Section {
   id: number;
@@ -20,7 +21,7 @@ const sections: Section[] = [
     imageAlt: "Bills to pay",
     title: "pay using Parliamint",
     description:
-      "Parliamint is a member-exclusive payments app for the 5% of trustworthy entreprenuers in the word that wants a simple and rewarding payments experience.",
+      "Parliamint is a member-exclusive payments app for the 5% of trustworthy entreprenuers in the world that wants a simple and rewarding payments experience.",
     imagePosition: "left",
     blobImg: "/images/Point.svg",
     listItems: [
@@ -99,13 +100,12 @@ const Sections: React.FC = () => {
                   )}
                   {section.actionText && (
                     <div className="mt-8">
-                      <a
-                        className="text-white items-center shadow shadow-gold text-lg font-semibold inline-flex px-6 focus:outline-none justify-center text-center bg-red-300 focus:bg-red-600 border-red-600 duration-300 outline-none focus:shadow-none border-2 sm:w-auto py-3 rounded-lg h-16 tracking-wide focus:translate-y-1 w-full hover:bg-red-500"
-                        href={section.actionLink}
-                        title="link to your page"
-                        aria-label="your label">
-                        {section.actionText}
-                      </a>
+                      <NeoPopTiltedButton 
+                       text={'download parliamint'} 
+                       backgroundColor={''} 
+                       url={''} 
+                       textColor={''} 
+                       />
                     </div>
                   )}
                 </div>

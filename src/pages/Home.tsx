@@ -3,6 +3,7 @@ import Main from '../components/main/Main.js';
 import Sections from '../components/Section.js';
 import Footer from '../components/Footer.js';
 import CTA from '../components/CTA.js';
+import Timeline from '../components/Timeline.js';
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
     <>
       <Main />
       <Sections />
+  
       <CTA />
       <Footer />
     </>

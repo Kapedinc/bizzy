@@ -1,7 +1,7 @@
 // tailwind.config.js
 module.exports = {
   mode: 'jit',
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {
       colors: {
@@ -96,7 +96,7 @@ module.exports = {
           300: '#c18a00',
           400: '#ffb702',
           500: '#ffcb44',
-          600: '#ffd468',
+          600: '#ffd700',
           700: '#ffdf8e',
           800: '#ffeab4',
           900: '#fff4d9',
@@ -124,6 +124,9 @@ module.exports = {
           700: '#effe8b',
           800: '#f4ffb2',
           900: '#faffd8',
+    },
+    gold: {
+      DEFAULT: '#ffd700',
     },
   },
 },
