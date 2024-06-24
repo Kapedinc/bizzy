@@ -12,7 +12,14 @@ const Main = () => {
   return (
     <div className='main-section-wrapper'>
       <div className='spline-scene-wrapper'>
-      
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="/videos/card_video_loop.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video>      
       </div>
       <div className='main-content'>
         <div className='flex flex-col items-center'>

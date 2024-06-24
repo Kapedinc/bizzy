@@ -33,7 +33,7 @@ const sections: Section[] = [
   },
   {
     id: 2,
-    imageSrc: "/images/FlashyRewards.svg",
+    imageSrc: "/images/FlashyRewards.gif",
     imageAlt: "rewards for payments",
     title: "opulent rewards for responsible executives",
     description:
@@ -63,7 +63,7 @@ const Sections: React.FC = () => {
                 />
               </div>
             )}
-            <div className="relative p-8 lg:px-20 items-center gap-12 h-full lg:inline-flex bg-chrysler_blue-500">
+            <div className="relative p-8 lg:px-20 items-center gap-12 h-full lg:inline-flex bg-violet-500">
               <div className="max-w-xl text-left">
                 <div>
                   <img

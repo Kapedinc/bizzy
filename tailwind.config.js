@@ -17,7 +17,7 @@ module.exports = {
           800: '#c3adff',
           900: '#e1d6ff',
         },
-        chrysler_blue: {
+        blue: {
           DEFAULT: '#4A25B3',
           100: '#0f0724',
           200: '#1e0f47',
