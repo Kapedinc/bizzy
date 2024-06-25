@@ -21,7 +21,7 @@ const sections: Section[] = [
     imageAlt: "Bills to pay",
     title: "pay using Parliamint",
     description:
-      "Parliamint is a member-exclusive payments app for the 5% of trustworthy entreprenuers in the world that wants a simple and rewarding payments experience.",
+      "Parliamint is a member-exclusive payments app for the 5% of trustworthy entreprenuers in the world that wants a simple and rewarding payments experience. Use parliamint to pay all your bills to unlock rewards:",
     imagePosition: "left",
     blobImg: "/images/Point.svg",
     listItems: [
@@ -29,6 +29,8 @@ const sections: Section[] = [
       "credit cards",
       "loans",
       "insurance premiums",
+      "any bill with a statement",
+      "+ more",
     ],
   },
   {

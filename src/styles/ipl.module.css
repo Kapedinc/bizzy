@@ -1,0 +1,150 @@
+.section_ipl {
+    background: rgb(18, 18, 18);
+    padding-bottom: 160px;
+  }
+  
+  .logo_container {
+    height: 193px;
+    background: rgb(255, 201, 25);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo_container > a > img {
+    width: 220px;
+    margin-top: 40px;
+  }
+  
+  .ipl_main {
+    width: 100vw;
+    margin-top: -40px;
+  }
+  
+  .cred_members {
+    max-width: 850px;
+    margin: 100px auto 0px;
+    padding: 80px 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  .cred_members_text {
+    font-size: 32px;
+    letter-spacing: 0.4em;
+  }
+  
+  .cred_members_bold {
+    font-family: gilroy-bold;
+    font-size: 112px;
+    line-height: 0.8em;
+    letter-spacing: -0.02em;
+    color: rgb(255, 223, 13);
+    text-shadow: rgb(0 0 0) -4px 4px 0px;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    margin-top: 40px;
+  }
+  
+  .cred_members_body {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+  
+  .percent_container {
+    background: rgb(255, 223, 13);
+    display: flex;
+  }
+  
+  .percent_container > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .percent_container > div > div {
+    max-width: 440px;
+    margin-left: 60px;
+  }
+  
+  .percent_container > div > div > div:first-child,
+  .percent_container > div > div > div:last-child {
+    font-size: 34px;
+    line-height: 1.2em;
+  }
+  
+  .percent_container > div > div > div:nth-child(2),
+  .trophy_container > div:first-child {
+    font-size: 170px;
+    font-family: gilroy-bold;
+    line-height: 1em;
+    letter-spacing: -0.03em;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    text-shadow: rgb(0 0 0) -4px 4px 0px;
+  }
+  
+  .percent_container > img {
+    width: 50%;
+    height: 100%;
+    background: rgb(248, 101, 248);
+  }
+  
+  .trophy_container {
+    background: rgb(106, 53, 255);
+    padding: 50px 140px 180px;
+    text-align: center;
+  }
+  
+  .trophy_container > div:nth-child(2) {
+    font-size: 48px;
+    line-height: 1.2em;
+    color: white;
+  }
+  
+  .trophy_container > img {
+    width: 100%;
+  }
+  
+  .prizes_container {
+    overflow: hidden;
+    height: 152px;
+    background: rgb(255, 223, 13);
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+  }
+  
+  .prizes_container > div {
+    white-space: nowrap;
+    padding-left: 100%;
+    font-family: gilroy-bold;
+    font-size: 72px;
+    letter-spacing: -0.03em;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    text-shadow: rgb(0 0 0) -4px 2px 0px;
+    color: rgb(242, 242, 242);
+    animation: 12s linear 0s infinite normal none running slideToLeft;
+  }
+  
+  @keyframes slideToLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .cred_members > a {
+    background: rgb(255, 223, 13);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: rgb(0 0 0) 8px 8px 0px;
+    display: inline-flex;
+    padding: 24px 86px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 70px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgb(0, 0, 0);
+  }

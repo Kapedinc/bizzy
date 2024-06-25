@@ -1,4 +1,5 @@
 import React from 'react';
+import NeoPopTiltedButton from '../shimmerButton/TiltedButton.js';
 
 interface Item {
     image: string;
@@ -18,8 +19,6 @@ interface Item {
     { image: "/icons/reward (1).svg", title: "finedu", description: "accesss a robust, curated source of financial education taught by leading financial firms." },
     { image: "/icons/shoping bag.svg", title: "shop parliamint", description: "earn points to exchange for partner gift cards to the most popular retail stores." },
     { image: "/icons/vouchers.png", title: "24/7 support", description: "reach out for priority support or simply submit a ticket for immediate support." },
-    { image: "/images/mobile-app.svg", title: "Mobile App", description: "Seamlessly trade and manage your crypto assets on the go with our mobile application, offering all the features and convenience you expect." },
-    { image: "/images/community-forum.svg", title: "Community Forum", description: "Connect with like-minded crypto enthusiasts, share insights, and participate in discussions within our community forum, fostering knowledge sharing and collaboration." }
   ];
   
 
@@ -44,12 +43,12 @@ const PageScroll: React.FC = () => {
                 the best service, the best rewards, the best everything.
               </p>
               <div className="flex-col flex gap-3 mt-10 sm:flex-row">
-                <a
-                  className="text-black items-center shadow shadow-black text-lg font-semibold inline-flex px-6 focus:outline-none justify-center text-center bg-white border-black ease-in-out transform transition-all focus:ring-lila-700 focus:shadow-none border-2 duration-100 focus:bg-black focus:text-white sm:w-auto py-3 rounded-lg h-16 tracking-wide focus:translate-y-1 w-full hover:text-lila-800"
-                  href="/"
-                >
-                  see what the hype is about
-                </a>
+                <NeoPopTiltedButton 
+                 text={'upgrade your life'} 
+                 backgroundColor={''} 
+                 url={''} 
+                 textColor={''} 
+                />
               </div>
             </div>
           </div>

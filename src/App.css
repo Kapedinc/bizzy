@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Voyage';
+  src: url('/fonts/Voyage-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 /* styles.css */
 .trust-span {
     position: relative;

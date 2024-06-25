@@ -3,9 +3,9 @@ import Main from '../components/main/Main.js';
 import Sections from '../components/Section.js';
 import Footer from '../components/Footer.js';
 import CTA from '../components/CTA.js';
-import Timeline from '../components/Timeline.js';
 import PageScroll from '../components/Features/PageScroll.js';
 import Banner from '../components/Features/Banner.js';
+import PaymentMethods from '../components/Features/PaymentMethods.js';
 
 
 const Home = () => {
@@ -13,6 +13,7 @@ const Home = () => {
     <>
       <Main />
       <Sections />
+      <PaymentMethods />
       <Banner />
       <PageScroll />  
       <CTA />

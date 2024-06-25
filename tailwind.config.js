@@ -4,6 +4,9 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {
+      fontFamily: {
+        voyage: ['Voyage', 'sans-serif'],
+      },
       colors: {
         violet: {
           DEFAULT: '#6A35FF',
