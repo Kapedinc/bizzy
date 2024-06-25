@@ -3,12 +3,9 @@ import React from 'react';
 import SplineScene from '../spline/SplineScene.js';
 import PepperdineBadge from '../trustBadges/PepperdineBadge.js';
 import './Main.scss'; // Ensure this file contains your CSS styles
-import Spline from '@splinetool/react-spline';
 import NeoPopTiltedButton from '../shimmerButton/TiltedButton.js';
 
-const Main = () => {
-  const sceneUrl = 'https://prod.spline.design/Ibxvmkm4KiUhkEdX/scene.splinecode';
-
+const Main = () => { 
   return (
     <div className='main-section-wrapper'>
       <div className='spline-scene-wrapper'>
