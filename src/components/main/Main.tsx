@@ -1,6 +1,5 @@
 // src/components/Main.tsx
 import React from 'react';
-import SplineScene from '../spline/SplineScene.js';
 import PepperdineBadge from '../trustBadges/PepperdineBadge.js';
 import './Main.scss'; // Ensure this file contains your CSS styles
 import NeoPopTiltedButton from '../shimmerButton/TiltedButton.js';
