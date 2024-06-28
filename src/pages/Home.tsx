@@ -19,7 +19,6 @@ const Home = () => {
       <PaymentMethods />
       <Banner />
       <PageScroll />  
-      <CTA />
       <Footer />
     </>
   )

@@ -105,7 +105,7 @@ const Sections: React.FC = () => {
                       <NeoPopTiltedButton 
                        text={'download parliamint'} 
                        backgroundColor={''} 
-                       url={''} 
+                       url={'https://share.hsforms.com/1bqS_DBRkS_KFskxocStoYgoyz25'} 
                        textColor={''} 
                        />
                     </div>

@@ -46,7 +46,7 @@ const PageScroll: React.FC = () => {
                 <NeoPopTiltedButton 
                  text={'upgrade your life'} 
                  backgroundColor={''} 
-                 url={''} 
+                 url={'https://share.hsforms.com/1bqS_DBRkS_KFskxocStoYgoyz25'} 
                  textColor={''} 
                 />
               </div>
