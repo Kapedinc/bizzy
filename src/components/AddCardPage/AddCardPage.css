@@ -1,0 +1,107 @@
+.add-card-container{
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+.add-card-left-container{
+    position: relative;
+    background: transparent;
+    flex:1;
+    height: inherit;
+    padding-right: 60px;
+}
+
+#add-your-card-title{
+    width: 300px;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    float: right;
+    font-size: 50px;
+    /* background-color: #2AA57F; */
+    text-align: right;
+    font-weight: 700;
+}
+
+.add-card-right-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex:1.25;
+    height: inherit;
+}
+
+#cred-logo-in-add-card{
+    position: absolute;
+    right: 12.5%;
+    top:50px;
+}
+
+.enter-card-no-section{
+    width: 75%;
+    padding: 30px 40px;
+    left: 50%;
+    background: #ffffff;
+    box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+}
+
+.enter-card-no-section p{
+    color: black;
+    font-weight: 600;
+}
+
+.card-no{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.card-no input{
+    width: 20px;
+    height: 25px;
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+    outline: none;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+}
+
+.card-no input::-webkit-inner-spin-button,
+.card-no input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.card-no input::-webkit-inner-spin-button,
+.card-no input::-webkit-outer-spin-button{
+    -moz-appearance: textfield;
+}
+
+#add-card-btn{
+    padding: 10px 20px;
+    background-color: #2AA57F;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+    float: right;
+    cursor: pointer;
+}
+
+#message{
+    width: 60%;
+    display: inline-block;
+    margin-top: 37px;
+    color: #FFC700;
+    font-size: 13px;
+    font-weight: 600;
+}

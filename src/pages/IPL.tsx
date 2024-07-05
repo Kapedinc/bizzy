@@ -4,7 +4,7 @@ import styles from "../styles/ipl.module.css";
 const IPL = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
-        document.title = `CRED Vivo IPL Power play Cashback & Mega Jackpot Rewards | CRED Vivo IPL Offers 2021 - CRED`;
+        document.title = `Parliamint Vivo IPL Power play Cashback & Mega Jackpot Rewards | Parliamint Vivo IPL Offers 2021 - Parliamint`;
       }, []);
     return (
         <>
@@ -15,8 +15,8 @@ const IPL = () => {
             <img className={styles.ipl_main} src="/assets/images/ipl_main.png" />
             <div className={styles.cred_members}>
                 <div className={styles.cred_members_text}>INDIAN PREMIER LEAGUE 2021</div>
-                <div className={styles.cred_members_bold}>here’s how CRED members celebrated</div>
-                <div className={styles.cred_members_body}>as the official partners for VIVO IPL 2021, CRED’s goal was simple: to make this time even more rewarding for our members. how? by giving them a reason to celebrate, each day of the tournament. and that’s exactly what happened.</div>
+                <div className={styles.cred_members_bold}>here’s how Parliamint members celebrated</div>
+                <div className={styles.cred_members_body}>as the official partners for VIVO IPL 2021, Parliamint’s goal was simple: to make this time even more rewarding for our members. how? by giving them a reason to celebrate, each day of the tournament. and that’s exactly what happened.</div>
             </div>
         </section>
         <section>
@@ -52,7 +52,7 @@ const IPL = () => {
             <div className={styles.cred_members}>
                 <div style={{marginTop: "0px"}} className={styles.cred_members_bold}>your perks are waiting</div>
                 <div style={{paddingTop: "60px", letterSpacing: "0px", fontFamily: "gilroy-bold"}} className={styles.cred_members_text}>experience how the creditworthy pay their bills</div>
-                <div className={styles.cred_members_body}>the creditworthy deserve a rewarding experience throughout the year. and that's exactly what CRED members get: pay your credit card bill online to get a taste of the perks in store for you.</div>
+                <div className={styles.cred_members_body}>the creditworthy deserve a rewarding experience throughout the year. and that's exactly what Parliamint members get: pay your credit card bill online to get a taste of the perks in store for you.</div>
             </div>
         </section>
         </>

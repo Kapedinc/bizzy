@@ -1,0 +1,36 @@
+.loading-dots-wrapper{
+    width: 30px;
+    height: 20px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dot{
+    width: 7px;
+    height: 7px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 50%;
+}
+
+.dot1{
+    animation: dot-anim 1s linear 0s infinite alternate;
+}
+
+.dot2{
+    animation: dot-anim 1s linear 0.33s infinite alternate;
+}
+
+.dot3{
+    animation: dot-anim 1s linear 0.66s infinite alternate;
+}
+
+@keyframes dot-anim {
+    0%{
+        background-color: rgb(255, 255, 255, 1);
+    }
+    100%{
+        background-color: rgba(255, 255, 255, 0);
+    }
+}

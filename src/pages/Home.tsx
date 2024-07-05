@@ -1,24 +1,16 @@
 import React from 'react'
-import Main from '../components/main/Main.js';
-import Sections from '../components/Section.js';
-import Footer from '../components/Footer.js';
-import CTA from '../components/CTA.js';
-import PageScroll from '../components/Features/PageScroll.js';
-import Banner from '../components/Features/Banner.js';
-import PaymentMethods from '../components/Features/PaymentMethods.js';
 import TextScroll from '../components/text-scroll/TextScroll.js';
+import LandingPage from '@/components/landing/LandingPage.js';
+import Footer from '@/components/Footer/Footer.js';
+import AddCardPage from '@/components/AddCardPage/AddCardPage.js';
 
 
 
 const Home = () => {
   return (
     <>
-      <Main />
+      <LandingPage />
       <TextScroll />
-      <Sections />
-      <PaymentMethods />
-      <Banner />
-      <PageScroll />  
       <Footer />
     </>
   )
